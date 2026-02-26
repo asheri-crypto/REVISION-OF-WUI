@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FORM</title>
+<style>
+      form {
+       width: 320px;
+       margin: 40px auto;
+       padding: 30px;
+       border: 2px solid #ccc;
+       border-radius: 8px;
+       box-shadow: 0 2px 8px #eee;
+       background: #fff;
+           }
+      h3{
+       text-align:center;
+       font-weight:bold; 
+        } 
+</style>
+<body>
+   <h3>STUDENT INQUIRY FORM</h3>
+
+<form action="#" meathod="post">
+  <label for="fname">FIRST NAME :</label>
+   <input type="text" id="fname" name="fname"><br><br>
+   
+  <label for="lname">LAST NAME :</label>
+   <input type="text" id="lname" name="lname"><br><br>
+
+  <label for="email"> E  M  A  I  L  :</label>
+   <input type="text" id="email" name="email"><br><br>
+
+  <label for="pass">PASSWORD :</label>
+   <input type="text" id="pass" name="pass"><br><br>
+   <p>FORGOT PASSWORD ?  <a href="link"> CLICK HERE</a></p>
+   
+
+ <label>GENDER :</label><br><br>
+ 
+ <input type="radio" id="male" name="gender" value="MALE">
+   <label for="male">MALE</label>
+
+<input type="radio" id="female" name="gender" value="FEMALE">
+   <label for="female">FEMALE</label><br><br>
+
+<label>LANGUAGE SPOKEN: </label><br><br>
+
+   <input type="checkbox" id="kinya" name="language[]" value="KINYARWANDA">
+    <label for="kinya">KINYARWANDA</label>
+
+  <input type="checkbox" id="eng" name="language[]" value="ENGLISH">
+    <label for="eng">ENGLISH</label><br><br>
+
+<label>CLASS: </label><br><br>
+
+  <select>
+     <option value="">--what is your class--</option>
+     <option value="senior one">SENIOR ONE</option>
+     <option value="senior two">SENIOR TWO</option>
+     <option value="senior three">SENIOR THREE</option>
+     <option value="senior four">SENIOR FOUR</option>
+     <option value="senior five">SENIOR FIVE</option>
+     <option value="senior six">SENIOR SIX</option>
+ </select><br><br>
+
+<label for="birth">BIRTH DAY: </label><br>
+  <input type="date" id="birth" name="birthday"><br><br>
+
+<label for="comment">WHAT IS YOUR REQUEST : </label><br><br>
+ <textarea id="comment" name="comment" rows="6" cols="20"></textarea><br><br>
+
+ <input id="reset"  value="RESET"><br><br>
+ <input id="submit" value="SUBMIT"><br>
+
+</form>
+
+</body>
+</html>

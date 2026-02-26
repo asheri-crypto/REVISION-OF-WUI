@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Golden Celebration</title>
+<style>
+body{
+  background:#000;
+  overflow:hidden;
+  height:100vh;
+  font-family:Arial;
+}
+
+/* Title */
+h1{
+  color:gold;
+  text-align:center;
+  margin-top:40px;
+  text-shadow:0 0 20px gold;
+}
+
+/* Sparkles */
+.sparkle{
+  position:absolute;
+  width:8px;
+  height:8px;
+  background:gold;
+  border-radius:50%;
+  animation:fly 3s linear infinite;
+}
+
+.sparkle:nth-child(1){left:10%; animation-delay:0s;}
+.sparkle:nth-child(2){left:20%; animation-delay:0.5s;}
+.sparkle:nth-child(3){left:30%; animation-delay:1s;}
+.sparkle:nth-child(4){left:40%; animation-delay:1.5s;}
+.sparkle:nth-child(5){left:50%; animation-delay:2s;}
+.sparkle:nth-child(6){left:60%; animation-delay:0.2s;}
+.sparkle:nth-child(7){left:70%; animation-delay:0.7s;}
+.sparkle:nth-child(8){left:80%; animation-delay:1.2s;}
+.sparkle:nth-child(9){left:90%; animation-delay:1.7s;}
+
+@keyframes fly{
+  0%{
+    top:100%;
+    opacity:1;
+    transform:scale(0);
+  }
+  50%{
+    opacity:1;
+    transform:scale(1);
+  }
+  100%{
+    top:-10%;
+    opacity:0;
+    transform:scale(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>✨ GOLDEN BUZZER ACTIVATED ✨</h1>
+
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+
+</body>
+</html>

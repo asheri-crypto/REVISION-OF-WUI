@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MAKING A FORM.</title>
+<style>
+  body {
+    background:#80ff80;
+    font-family: Arial, sans-serif;
+  }
+  form {
+    background-color: #d4f7d4;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+  }
+  label {
+    color: #246d24;
+    font-weight: bold;
+  }
+  input[type="submit"] {
+    color: white;
+    background-color: #43a047;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  input[type="reset"] {
+    color: white;
+    background-color: #43a047;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  input[type="text"] {
+    color: #225522;
+    background-color: #c6f5c6;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  input[type="comment"] {
+    color: #006400;
+    background-color: #b2dfdb;
+    padding: 7px 9px;
+    border: none;
+    cursor: pointer;
+  }
+  h2 {
+    text-align: center;
+    color: #388e3c;
+  }
+  input[type="email"], input[type="password"], input[type="date"] {
+    background-color: #d0ffd0;
+    color: #225522;
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+  select {
+    background-color: #b3ffb3;
+    color: #246d24;
+    border: none;
+    padding: 5px 10px;
+  }
+  textarea {
+    background-color: #e0ffe0;
+    color: #2e7d32;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    padding: 8px 12px;
+    border: none;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    accent-color: #388e3c;
+  }
+</style>
+</head>
+<body>
+<h2>STUDENT ACCESS INQUIRY.</h2>
+
+<form action="#" method="post">
+
+<label for="fname">FIRST NAME :</label><br>
+<input type="text" id="fname" name="FIRST_NAME" placeholder="your first name"><br><br>
+
+<label for="lname">LAST NAME :</label><br>
+<input type="text" id="lname" name="LAST_NAME" placeholder="your second name" ><br><br>
+
+<label for="email">EMAIL :</label><br>
+<input type="email" id="email" name="EMAIL"><br><br>
+
+<label>GENDER:</label><br><br>
+
+<input type="radio" id="male" name="gender" value="MALE">
+<label for="male">MALE</label><br>
+
+<input type="radio" id="female" name="gender" value="FEMALE">
+<label for="female">FEMALE</label><br><br>
+
+<label>LANGUAGE SPOKEN:</label><br><br>
+
+<input type="checkbox" id="kinya" name="language[]" value="KINYARWANDA">
+<label for="kinya">KINYARWANDA</label><br>
+
+<input type="checkbox" id="eng" name="language[]" value="ENGLISH">
+<label for="eng">ENGLISH</label><br>
+
+<input type="checkbox" id="fr" name="language[]" value="FRENCH">
+<label for="fr">FRENCH</label><br>
+
+<input type="checkbox" id="spa" name="language[]" value="SPANISH">
+<label for="spa">SPANISH</label><br>
+
+<input type="checkbox" id="swa" name="language[]" value="KISWAHILI">
+<label for="swa">KISWAHILI</label><br><br>
+
+<label for="birthdate">BIRTH DATE:</label>
+<input type="date" id="birthdate" name="BIRTH DATE"><br><br>
+
+<label for="class">SELECT YOUR CLASS :</label><br><br>
+
+<select id="class" name="STUDENT CLASS">
+<option value="">--Select your class from the list--</option>
+<option value="senoir one">SENIOR ONE</option>
+<option value="senoir two">SENIOR TWO</option>
+<option value="senoir three">SENIOR THREE</option>
+<option value="senoir four">SENIOR FOUR</option>
+<option value="senoir five">SENIOR FIVE</option>
+<option value="senoir six">SENIOR SIX</option>
+</select><br><br>
+
+<label for="pass">PASSWORD :</label>
+<input type="password" id="pass" name="password" placeholder="at least 8 characters"><br><br>
+
+<label for="comment">WHAT IS YOUR REQUEST ?</label><br><br>
+<textarea id="comment" name="request" rows="5" cols="20" placeholder="Enter your request here feel free"></textarea><br><br>
+
+<input type="reset" value="RESET"><br><br>
+
+<input type="submit" value="SUBMIT">
+
+</form>
+</body>
+</html>
